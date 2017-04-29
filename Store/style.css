@@ -1,0 +1,42 @@
+/*CSS File For Sign-Up webpage*/ 
+#body-color
+	{ 
+	background-color:#ffffff; 
+	background-image:url('London-Bridge-Wallpaper-Free-Download-1080P.jpg');
+	} 
+	
+#Sign-Up
+	{
+		background-image:url(''); 
+		background-size:500px 500px; 
+		background-repeat:no-repeat; 
+		background-attachment:fixed; 
+		background-position:center; 
+		margin-top:150px; 
+		margin-bottom:150px; 
+		margin-right:150px; 
+		margin-left:150px; 
+		padding:9px 35px; 
+	} 
+
+#button
+	{
+		border-radius:10px; 
+		width:100px; 
+		height:40px; 
+		background:#116688; 
+		font-weight:bold; 
+		font-size:20px; 
+	}
+
+#login
+	{
+	
+		border-radius:10px; 
+		width:100px; 
+		height:40px; 
+		
+		font-weight:bold; 
+		font-size:20px; 
+		
+	}
