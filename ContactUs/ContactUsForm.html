@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+     <link rel="stylesheet" type="text/css" href= "CSS/StyleSheet.css">
+     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+	<script type="text/javascript">	 function initMap() {
+     var position = new google.maps.LatLng(79.8593033,6.8652728);
+     var position2 = new google.maps.LatLng(51.5033, 0.1195);
+     var position3 = new google.maps.LatLng(51.1789, -1.8261);
+     var position4 = new google.maps.LatLng(51.5313,  -0.1465);
+     var myOptions = {
+       zoom: 6,
+       center: position,
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+     var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+     var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"Travel Girls HQ"
+     });
+
+     var marker2 = new google.maps.Marker({
+        position: position2,
+       map: map,
+        title:"London eye"
+    }); 
+
+     var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Stonehenge"
+     }); 
+
+     var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Regent's Park"
+     }); 
+ 
+     var contentString = 'We are  <strong>here</strong>!';
+     var infowindow = new google.maps.InfoWindow({
+        content: contentString
+     });
+ 
+     google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+     });
+ 
+  }
+</script>
+     <script src="JavaScript/map.js"></script>
+     <script src="JavaScript/contact_us_Form.js"></script>
+     <style>
+	 body{
+              background: url(Images/images4.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+     </style>
+</head>
+
+<body>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="../Destinations/France.html">France</a>
+      <a href="../Destinations/England.html">England</a>
+      <a href="../Destinations/Italy.html">Italy</a>
+      <a href="../Destinations/Singapore.html">Singapore</a>
+      <a href="../Destinations/Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<br/>
+<br/>
+<br/>
+
+
+<table  width=900 height=625   class="layout" bgcolor="#EBF4FA"  align="center">
+  <tr>
+  <td > 
+       <div id="site_content">
+       <div id="content">
+ 
+       <form name="myForm"  method="POST" action="connect.php" onsubmit="return confirmSubmit();"
+           onreset="return confirmReset()" id = "1">
+ 
+       <table width=450 height=450 align="left" bgcolor="#EBF4FA" >
+       <tr>
+       <td >
+           <h1 id="title">Contact Us</h1>
+           <hr width=320 align="left" color="#FFFFFF"><br/>
+     
+             Your Name:<br/><br/>
+	     <input  type="text" name="name" size="38" required ><br/><br/>
+	     Your Email:<br/><br/>
+	     <input  type="email" name="email"  size="38" required><br/><br/>
+	     Your Message:<br/><br/>
+	     <textarea  name="message" rows="7"  cols="39" required></textarea><br/><br/>
+	
+             How would you rate us?&nbsp;
+
+	     <select name="rate"  class="input" required>
+		     <option value="Select" name="rate">--------Select---------</option>
+		     <option value="Excellent" name="rate"> Excellent </option>
+		     <option value="Good" name="rate"> Good </option>
+		     <option value="Improve" name="rate"> Improve </option>
+	    
+             </select><br/><br/>
+   
+             <input type="checkbox" name = "update" >
+             Receive updates by email<br/><br/>
+         
+             <details>
+             <summary>Summary</summary>
+	     </details>
+
+             <input type="hidden" id="register_comment" name="register_comment" value="true" />
+			<div id="validation_msg">
+			</div>
+            
+             <p align= "center">
+	         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input  id ="button" type="submit" value="Submit"></p> 
+	  </td>
+         </tr>
+        </table>
+     </form>
+    </div>
+
+
+     <div class= "sidebar">
+
+      <h3><b>GET IN TOUCH</b></h3>
+
+      <div id ="p1"><b>PHONE</b></div>
+      (+94)-725882731
+      <br/><br/>
+
+      <div id ="p1"><b>EMAIL</b></div>
+      <address>TravelGirl@gmail.com</address> 
+      <br/>
+
+      <div id ="p1"><b>ADDRESS</b></div>
+      No.50 Edward Road, <br/>
+      Colombo <br/> 
+      00700<br/>
+      Sri Lanka<br/>
+      <hr/>
+
+      <div id = "map_canvas" style="width:300px; height:250px">
+
+     </div>
+    </tr>
+   </table>
+   </div>
+
+   <br/>
+ 
+   <table width="40%"  align="center">
+   <tr>
+    <td bgcolor="#A9F5F2"><center><p3 class="blink">How well do you know about these countries <br/>Find out here!!</p3></center><br/>
+        <input type="button" id="button_1" style="width: 100px; float: right;" value="Click here!" onclick="location.href='../Quiz/Quiz1/quizrule.html'"/></td><td></td><td></td>
+
+    </table>
+  <br/>
+ 
+  <div id="content_footer">
+    <div id="footer">
+      <p><a href="HomePage.html">Home</a>| <a href="about_us.html">About Us</a>| <a href="cake.html">Destinations</a>| <a href="cv.html">Travel Plans</a>| <a href="quiz.html">Our Store</a>|<a href="ContactUsFrom.html">Contact Us</a></p>
+      <p>Copyright &copy Sky Cru Travel Agency.&nbsp50, Edward Road, Colombo-07, Sri Lanka.Tel:(+)94 112 900 876,(+)94 112 221 765</p>
+    </div>
+  </div>
+</body>
+</html>
+
