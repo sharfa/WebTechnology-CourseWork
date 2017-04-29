@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	France.......
+	</title>
+
+     <style>
+	 body{
+              background: url(Images/simple-plain-light-blue-wallpaper.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+     </style>
+<link rel="stylesheet" type="text/css" href="countries.css">
+<link rel="StyleSheet" type="text/css" href="DestinationsNav.css"/>
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+
+  function initMap() {
+    var position = new google.maps.LatLng(48.8584, 2.2945);
+    var position2 = new google.maps.LatLng(48.8596, 2.3369);
+    var position3 = new google.maps.LatLng(47.6161, 1.5172);
+    var position4 = new google.maps.LatLng(48.8530,  2.3499);
+    var myOptions = {
+      zoom: 6,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"Eiffel Tower"
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: position2,
+        map: map,
+        title:"Louvre Museum"
+    }); 
+
+    var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Château de Chambord"
+    }); 
+
+    var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Notre Dame de Paris"
+    }); 
+ 
+    var contentString = 'Hello <strong>World</strong>!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body>
+
+
+    
+<div class="container">
+
+
+<header>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="France.html">France</a>
+      <a href="England.html">England</a>
+      <a href="Italy.html">Italy</a>
+      <a href="Singapore.html">Singapore</a>
+      <a href="Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<h1 id = "heading">Capture the Moment</h1>
+	
+</header>
+
+
+  
+<nav id="navi">
+	<ul id = "countries">
+	
+	<ul class = "countries">
+			<li id="eng" ><b><a href = "England.html">England</a></b>
+			<li id = "eng"><b><a href="">France</a></b></li>
+    		<li id="eng" ><a href="#eiffel">Eiffel Tower</a></li>
+    		<li id="eng" ><a href="#louvre">Louvre Museum</a></li>
+    		<li id="eng"><a href="#chat">Château de </a></li>
+		<li id="eng"><a href="#notre">Notre Dame </a></li>
+		<li id="eng"><a href="#map_canvas">Go to Map</a></li><br>
+		
+		<li id = "eng"><b><a href="Italy.html">Italy</a></b></li>
+		<li id = "eng"><b><a href="Singapore.html">Singapore</a></b></li>
+		<li id = "eng"><b><a href="Malaysia.html">Malaysia</a></b></li>
+  	</ul>
+	
+</nav>
+
+<article>
+
+<h1><center>France</center></h1>
+<h1 id = "eiffel">Eiffel Tower</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. 
+		It is named after the engineer Gustave Eiffel, whose company designed and built the tower.
+		The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. <br><br>
+
+		The tower has three levels for visitors, with restaurants on the first and second levels. 
+		The top level's upper platform is 276 m above the ground – the highest observation deck accessible to the public in the European Union.
+		</p>
+		</td>
+
+	 	<td>
+		<img src="Images/France-Eiffel-Tower.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+
+<h1 id = "louvre">Louvre Museum</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The Louvre or the Louvre Museum  is the world's largest museum and a historic monument in Paris, France. 
+		A central landmark of the city, it is located on the Right Bank of the Seine in the 1st arrondissement.
+		Nearly 35,000 objects from prehistory to the 21st century are exhibited over an area of 60,600 square metres . <br><br>
+
+		The Louvre is the world's second most visited museum after the Palace Museum in China, receiving more than 9.26 million visitors in 2014. 
+		The painting collection at the Louvre has more than 7,500 works including the Leonardo da Vinci's Mona Lisa,
+		Virgin and Child with St. Anne, St. John the Baptist, and Madonna of the Rocks.
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/louvre.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "chat">Château de Chambord</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The royal Cha&#770teau de Chambord at Chambord, Loir-et-Cher, France, 
+		is one of the most recognizable châteaux in the world because of its very distinctive French Renaissance architecture
+		which blends traditional French medieval forms with classical Renaissance structures. 
+		The building, which was never completed, was constructed by King Francis I of France.<br><br>
+
+		Chambord is the largest château in the Loire Valley; it was built to serve as a hunting lodge for Francis I, 
+		who maintained his royal residences at the châteaux of Blois and Amboise. 
+		The original design of the Château de Chambord is attributed, though with some doubt, to Domenico da Cortona; 
+		Leonardo da Vinci may also have been involved.
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/Château-de-Chambord-Photo1.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "notre">Notre Dame de Paris</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Notre-Dame de Paris , also known as Notre-Dame Cathedral or simply Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité 
+		in the fourth arrondissement of Paris, France.
+		The cathedral is widely considered to be one of the finest examples of French Gothic architecture, 
+		and is among the largest and most well-known church buildings in the world. <br><br>
+
+		As the cathedral of the Archdiocese of Paris, Notre-Dame contains the cathedra of the Archbishop of Paris, 
+		currently Cardinal André Vingt-Trois.The cathedral treasury contains a reliquary which houses some of 
+		Catholicism's most important relics, including the purported Crown of Thorns, a fragment of the True Cross, and one of the Holy Nails.
+		
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/Cathedrale_Notre-Dame_de_Paris_nef_nouvelles_cloches.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+<br>
+<br>
+<div id = "map_canvas" style="width:1100px; height:400px">
+
+</div>
+</article>
+
+<footer>Copyright &copy Dinithi Wickramaratne</footer>
+
+</div>
+
+</body>
+</html>

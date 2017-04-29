@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	Italy.......
+	</title>
+<style>
+	 body{
+              background: url(Images/simple-plain-light-blue-wallpaper.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+     </style>
+<link rel="stylesheet" type="text/css" href="countries.css">
+<link rel="StyleSheet" type="text/css" href="DestinationsNav.css"/>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+  function initMap() {
+    var position = new google.maps.LatLng(40.5610, 14.2057);
+    var position2 = new google.maps.LatLng(43.7230, 10.3966);
+    var position3 = new google.maps.LatLng(45.4364, 12.3322);
+    var position4 = new google.maps.LatLng(41.8902, 12.4922);
+    var myOptions = {
+      zoom: 6,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"Blue Grotto"
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: position2,
+        map: map,
+        title:"Leaning Tower of Pisa"
+    }); 
+
+    var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Grand Canal"
+    }); 
+
+    var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Colosseum"
+    }); 
+ 
+    var contentString = 'Hello <strong>World</strong>!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body>
+
+
+    
+<div class="container">
+
+<header>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="France.html">France</a>
+      <a href="England.html">England</a>
+      <a href="Italy.html">Italy</a>
+      <a href="Singapore.html">Singapore</a>
+      <a href="Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<h1 id = "heading">Capture the Moment</h1>
+	
+</header>
+  
+<nav id="navi">
+	<ul id = "countries">
+	
+	<ul class = "countries">
+			<li id="eng" ><b><a href = "England.html">England</a></b>
+			<li id = "eng"><b><a href="France.html">France</a></b></li><br><br>
+			<li id = "eng"><b><a href="">Italy</a></b></li>
+    		<li id="eng" ><a href="#blue">Blue Grotto</a></li>
+    		<li id="eng" ><a href="#pisa">Leaning Tower</a></li>
+    		<li id="eng"><a href="#grand">Grand Canal</a></li>
+		<li id="eng"><a href="#colo">Colosseum</a></li>
+		<li id="eng"><a href="#map_canvas">Go to Map</a></li><br>
+		
+		
+		<li id = "eng"><b><a href="Singapore.html">Singapore</a></b></li>
+		<li id = "eng"><b><a href="Malaysia.html">Malaysia</a></b></li>
+  	</ul>
+	
+</nav>
+
+<article>
+
+<h1><center>Italy</center></h1>
+<h1 id = "blue">Blue Grotto</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>The Blue Grotto is a number of sea caverns on the south coast of Malta, east of the fishermen's harbour Wied iz-zurrieq.
+		Wied iz-zurrieq is in the village of Qrendi and the blue grotto cave located within the Qrendi village. 
+		It is located right across from the small uninhabited islet of Filfla. <br><br>
+
+		Every day from sunrise until about 1 pm a unique sight can be observed here. 
+		The location of the cave combined with the sunlight lead to the water mirroring showing numerous shades of blue. 
+		Several caverns mirror the brilliant phosphorescent colours of the underwater flora; other caverns show a deep dark shade of blue.
+		</p>
+		</td>
+
+	 	<td>
+		<img src="Images/Capri-Blue-Grotto20140504-_ALL1638-Edit.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+
+<h1 id = "pisa">Leaning Tower of Pisa</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The Leaning Tower of Pisa or simply the Tower of Pisa  is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, 
+		known worldwide for its unintended tilt.
+		It is situated behind the Cathedral and is the third oldest structure in Pisa's Cathedral Square 
+		after the Cathedral and the Baptistery.<br><br>
+
+		The height of the tower is 55.86 metres from the ground on the low side and 56.67 metres on the high side. 
+		The width of the walls at the base is 2.44 m. 
+		Prior to restoration work performed between 1990 and 2001, the tower leaned at an angle of 5.5 degrees, but the tower now leans at about 3.99 degrees
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/leaning-tower-of-pisa-italy.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "grand">The Grand Canal</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The Grand Canal, is a canal in Venice, Italy. It forms one of the major water-traffic corridors in the city. 
+		Public transport is provided by water buses and private water taxis, and many tourists explore the canal by gondola.<br><br>
+
+		One end of the canal leads into the lagoon near the Santa Lucia railway station and the other end leads into Saint Mark Basin;
+		in between, it makes a large reverse-S shape through the central districts of Venice. 
+		It is 3.8 km long, and 30 to 90 m wide, with an average depth of five meters .
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/grand-canal3-750x387.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "colo">The Colosseum</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The Colosseum or Coliseum, also known as the Flavian Amphitheatre, is an oval amphitheatre in the centre of the city of Rome, Italy. 
+		Built of concrete and sand,it is the largest amphitheatre ever built. 
+		The Colosseum is situated just east of the Roman Forum.<br><br>
+
+		The Colosseum could hold, it is estimated, between 50,000 and 80,000 spectators,having an average audience of some 65,000;
+		it was used for gladiatorial contests and public spectacles such as mock sea battles , animal hunts, executions, re-enactments of famous battles, 
+		and dramas based on Classical mythology. 
+		
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/Colosseum-free-hd-wallpapers.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+<br>
+<br>
+<div id = "map_canvas" style="width:1100px; height:400px">
+
+</div>
+</article>
+
+<footer>Copyright &copy Dinithi Wickramaratne</footer>
+
+</div>
+
+</body>
+</html>

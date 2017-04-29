@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	Singapore.......
+	</title>
+<style>
+	 body{
+              background: url(Images/simple-plain-light-blue-wallpaper.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+</style>
+<link rel="stylesheet" type="text/css" href="countries.css">
+<link rel="StyleSheet" type="text/css" href="DestinationsNav.css"/>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+  function initMap() {
+    var position = new google.maps.LatLng(3.158169, 101.712166);
+    var position2 = new google.maps.LatLng(3.152821, 101.703735);
+    var position3 = new google.maps.LatLng(2.759393, 101.731928);
+    var position4 = new google.maps.LatLng(5.423596, 100.269604);
+    var myOptions = {
+      zoom: 6,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"Petronas Towers"
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: position2,
+        map: map,
+        title:"Kuala lampur tower"
+    }); 
+
+    var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Sepang International Circuit"
+    }); 
+
+    var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Penang hill"
+    }); 
+ 
+    var contentString = 'Hello <strong>World</strong>!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body onload = "initialize()">
+
+
+    
+<div class="container">
+
+<header>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="France.html">France</a>
+      <a href="England.html">England</a>
+      <a href="Italy.html">Italy</a>
+      <a href="Singapore.html">Singapore</a>
+      <a href="Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<h1 id = "heading">Capture the Moment</h1>
+	
+</header>
+  
+<nav id="navi">
+	<ul id = "countries">
+	
+	<ul class = "countries">
+			<li id="eng" ><b><a href = "">Malaysia</a></b>
+    		<li id="eng" ><a href="#Petronas Towers">petronas towers</a></li>
+    		<li id="eng" ><a href="#Kuala lampur tower">Kuala lampur towers</a></li>
+    		<li id="eng"><a href="#Sepang International Circuit">Sepang</a></li>
+		<li id="eng"><a href="#Penang hill">Penang hill</a></li>
+		<li id="eng"><a href="#map_canvas">Go to Map</a></li><br>
+		<li id = "eng"><b><a href="France.html">France</a></b></li><br><br>
+		<li id = "eng"><b><a href="Italy.html">Italy</a></b></li>
+		<li id = "eng"><b><a href="Singapore.html">Singapore</a></b></li>
+		<li id = "eng"><b><a href="England.html">England</a></b></li>
+  	</ul>
+	
+</nav>
+
+<article>
+
+<h1><center>Malaysia</center></h1>
+<h1 id = "Petronas Towers">Petronas Towers</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>This amazing building of 452 meters of height (88 floors and 32.000 windows) is one of the tallest in the world. The building is based on the five pillars of the Islam, which can be seen in the round shapes of the towers. The building is designed by Cesar Pelli, a famous architect. In 2004 the building won the Aga Khan price for its special architectonic building style.The whole complex is over 40 hectares big, in its days it was one of the biggest building projects ever. On Discovery Channel every now and then an episode about the construction of the PETRONAS Twin Towers in broadcasted. In this program the whole project is explained in hour. On the Malaysian television this episode is broadcasted by Discovery regularly.
+		</p>
+		</td>
+
+	 	<td>
+		<img src="https://en.wikiarquitectura.com/images/a/a9/Petronas0.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+
+<h1 id = "Kuala lampur Tower">Kuala lampur Tower</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Along with the Petronas Twin Towers, Menara Kuala lampur Tower is easily Malaysia’s most recognizable and popular landmark. Constructed in 1994, the tower stands at 421 metres and effortlessly trumps the Petronas Twin Towers with the highest and most spectacular view of the city. This gleaming tower’s spindle-like apex is visible from almost anywhere in Kuala Lumpur.
+		</p>
+		</td>
+
+		 <td>
+		<img src="https://s-media-cache-ak0.pinimg.com/236x/b9/ef/96/b9ef9662ab21abee6414a49494327512.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "Sepang International Circuit">Sepang International Circuit</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Sepang is located some 50 km / 31 miles south of Malaysia's capital city, Kuala Lumpur.An important detail of this wonderful circuit is the width of the 5,542 kilometers long track. Counting an average cross-cut of 16 meters this is the widest of all circuits where the Grand Prix is driven. A wide circuit means there are more opportunities to overtake, and it contributes to a larger safety factor.
+
+Especially the good opportunities to overtake add a lot of tension and sensation to the race. Sepang International Circuit has two large main tribunes offering space for 30.000 visitors. Next to Formula1 and MotoGP, numerous other races take place at Sepang International Circuit. 
+		</p>
+		</td>
+
+		 <td>
+		<img src="http://www.wonderfulmalaysia.com/attractions/files/2012/02/sepang-international-circuit-2.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "Penang hill">Penang hill</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Penang Hill was the first colonial hill station developed in Peninsular Malaysia. Comprising Western Hill, Bukit Laksamana, Tiger Hill, Flagstaff Hill and Government Hill, it is located six km away from Georgetown. The hilly and forested area is the state's primary hill resort.
+
+Set 821m above Penang’s capital, islanders call it Bukit Bendera and it is generally about five degrees cooler than Georgetown. It is the last patch of tropical rainforest in Penang so the flora and fauna here have been protected since 1960. It does not have the same prominence as Genting Highlands, Fraser’s Hill or Cameron Highlands but it is one of Penang’s best-known tourist attractions due to its fresher climate.
+		
+		</p>
+		</td>
+
+		 <td>
+		<img src="http://ak1.jogurucdn.com/media/image/p12/place-2014-08-26-16-Penanghillf6dd3589287c0fd516c1754f61b414e2.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+<br>
+<br>
+<div id = "map_canvas" style="width:1100px; height:400px">
+
+</div>
+</article>
+
+<footer>Copyright © Afra Raheem</footer>
+
+</div>
+
+</body>
+</html>

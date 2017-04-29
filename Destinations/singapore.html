@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	Singapore.......
+	</title>
+
+<style>
+	 body{
+              background: url(Images/simple-plain-light-blue-wallpaper.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+     </style>
+<link rel="stylesheet" type="text/css" href="countries.css">
+<link rel="StyleSheet" type="text/css" href="DestinationsNav.css"/>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+  function initMap() {
+    var position = new google.maps.LatLng(1.250594, 103.830216);
+    var position2 = new google.maps.LatLng(1.318677, 103.706417);
+    var position3 = new google.maps.LatLng(1.283331, 103.860329);
+    var position4 = new google.maps.LatLng(1.280887, 103.850251);
+    var myOptions = {
+      zoom: 6,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"Resorts World Sentosa"
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: position2,
+        map: map,
+        title:"Jurong Bird Park"
+    }); 
+
+    var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Marina Bay Sands"
+    }); 
+
+    var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Lau Pa Sat(food market)"
+    }); 
+ 
+    var contentString = 'Hello <strong>World</strong>!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body onload = "initialize()">
+
+
+    
+<div class="container">
+
+<header>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="France.html">France</a>
+      <a href="England.html">England</a>
+      <a href="Italy.html">Italy</a>
+      <a href="Singapore.html">Singapore</a>
+      <a href="Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<h1 id = "heading">Capture the Moment</h1>
+	
+</header>
+  
+<nav id="navi">
+	<ul id = "countries">
+	
+	<ul class = "countries">
+			<li id="eng" ><b><a href = "">Singapore</a></b>
+    		<li id="eng" ><a href="#Universal Studio">Sentosa</a></li>
+    		<li id="eng" ><a href="#Jurong">Jurong Bird Park</a></li>
+    		<li id="eng"><a href="#Marina Bay Sands">Marina Bay</a></li>
+		<li id="eng"><a href="#lau pa sat">lau pa sat</a></li>
+		<li id="eng"><a href="#map_canvas">Go to Map</a></li><br>
+		<li id = "eng"><b><a href="France.html">France</a></b></li><br><br>
+		<li id = "eng"><b><a href="Italy.html">Italy</a></b></li>
+		<li id = "eng"><b><a href="England.html">England</a></b></li>
+		<li id = "eng"><b><a href="Malaysia.html">Malaysia</a></b></li>
+  	</ul>
+	
+</nav>
+
+<article>
+
+<h1><center>Singapore</center></h1>
+<h1 id = "Universal Studio">Sentosa Theme park</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>Resorts World Sentosa is a Singaporean destination unto itself. Located on an island off Singapore’s south coast, the property features hotels, restaurants, a casino, theme parks – in short, something for everyone no matter how old they are. With this location, attractions obviously center around the sea: Marine Life Park, Dolphin Island, a water park and an aquarium. Other attractions include Universal Studios Singapore and nightly entertainment. The casino offers a variety of table games sand 2,400 slot machines; be forewarned, it does enforce a dress code. The resort offers more than 60 dining options for hungry guests.
+		</p>
+		</td>
+
+	 	<td>
+		<img src="http://packages.asiatravel.com/packageImage/Tour/AddtlImages/200/USS.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+
+<h1 id = "Jurong">Jurong Bird Park</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		For an up-close encounter with some of our prettiest and rarest feathered friends, step into Jurong Bird Park.
+
+Spread across 20.2 hectares in a western corner of Singapore, this sprawling park is Asia’s largest, with a collection of over 5,000 birds from 400 species.
+
+You’ll meet the many feathered residents during daily feeding sessions, even glimpsing elusive birds like the crested guinea fowl, iridescent starling and turaco. 
+		</p>
+		</td>
+
+		 <td>
+		<img src="http://www.e-perpustakaan.com/wp-content/uploads/2015/07/Jurong-Bird-Park-Address-Singapore.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "Marina Bay Sands">Marina Bay</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The magnificent Marina Bay Sands is an integrated resort fronting Marina Bay that offers a luxury 2,561-room hotel, an art convention and exhibition center, the Shoppes Mall, an Art & Science museum, two Sands Theatres, seven “celebrity chef” restaurants, two floating pavilions and a casino with 500 tables and 1,600 slot machines.The three hotel towers are connected by a 340 meter-long sky terrace on the roof that resembles a ship named Sands SkyPark, . The Skypark is home to restaurants, lush tropical trees and plants and an observation deck, but its highlight is the longest elevated swimming pool in the world, a 150-meter (478-ft.) infinity edged pool, which stands 191 meters from the ground on the 56th floor of the complex building. But do not get too excited, the pool is for exclusive use of the luxury hotel guests.
+
+		</p>
+		</td>
+
+		 <td>
+		<img src="http://www.hoteltrip.com/travelblogs/wp-content/uploads/2013/12/Marina-Bay-Sands.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "lau pa sat">lau pa sat(Food market)</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		In the heart of the financial district, surrounded by the tallest buildings in Singapore you will find Lau Pa Sat, one of the most popular food markets in the city. Come here to try the local delicacies, chicken rice, satay and kaya toast, as well as the other dishes that make up the varied cuisine on offer in Singapore. Although there are plenty of places to try these dishes, Lau Pa Sat is the ideal location to find them all under one roof, and the setting is far more romantic than most hawker centres, especially at night when the satay vendors set up stalls outside.
+		
+		</p>
+		</td>
+
+		 <td>
+		<img src="http://mothership.sg/wp-content/uploads/2014/07/lau-pa-sat-filter.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+<br>
+<br>
+<div id = "map_canvas" style="width:1100px; height:400px">
+
+</div>
+</article>
+
+<footer>Copyright © Afra Raheem</footer>
+
+</div>
+
+</body>
+</html>

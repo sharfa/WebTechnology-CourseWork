@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	England
+	</title>
+<style>
+	 body{
+              background: url(Images/simple-plain-light-blue-wallpaper.jpg) no-repeat center center fixed; 
+  	     -webkit-background-size: cover;
+  	     -moz-background-size: cover;
+  	     -o-background-size: cover;
+  	      background-size: cover;
+            }
+     </style>
+<link rel="stylesheet" type="text/css" href="countries.css">
+<link rel="StyleSheet" type="text/css" href="DestinationsNav.css"/>
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuGVL6kGEux0cbihhdpkEY8Brj0bkBmvY&callback=initMap"
+    async defer></script>
+<script type="text/javascript">
+  function initMap() {
+    var position = new google.maps.LatLng(51.5079, 0.0877);
+    var position2 = new google.maps.LatLng(51.5033, 0.1195);
+    var position3 = new google.maps.LatLng(51.1789, -1.8261);
+    var position4 = new google.maps.LatLng(51.5313,  -0.1465);
+    var myOptions = {
+      zoom: 6,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"London Bridge"
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: position2,
+        map: map,
+        title:"London eye"
+    }); 
+
+    var marker3 = new google.maps.Marker({
+        position: position3,
+        map: map,
+        title:"Stonehenge"
+    }); 
+
+    var marker4 = new google.maps.Marker({
+        position: position4,
+        map: map,
+        title:"Regent's Park"
+    }); 
+ 
+    var contentString = 'Hello <strong>World</strong>!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body onload = "initialize()">
+
+
+    
+<div class="container">
+
+<header>
+<ul id="ul1">
+  <li><a class="active" href="../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="France.html">France</a>
+      <a href="England.html">England</a>
+      <a href="Italy.html">Italy</a>
+      <a href="Singapore.html">Singapore</a>
+      <a href="Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../Store/products1.php">Souvenir</a>
+      <a href="../Store/products2.php">Books</a>
+      <a href="../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+
+<h1 id = "heading">Capture the Moment</h1>
+	
+</header>
+  
+<nav id="navi">
+	<ul id = "countries">
+	
+	<ul class = "countries">
+			<li id="eng" ><b><a href = "England.html">England</a></b>
+    		<li id="eng" ><a href="#bridge">London Bridge</a></li>
+    		<li id="eng" ><a href="#stonehenge">Stonehenge</a></li>
+    		<li id="eng"><a href="#londonEye">London Eye</a></li>
+		<li id="eng"><a href="#regents">Regents Park</a></li>
+		<li id="eng"><a href="#map_canvas">Go to Map</a></li><br>
+		<li id = "eng"><b><a href="France.html">France</a></b></li><br><br>
+		<li id = "eng"><b><a href="Italy.html">Italy</a></b></li>
+		<li id = "eng"><b><a href="Singapore.html">Singapore</a></b></li>
+		<li id = "eng"><b><a href="Malaysia.html">Malaysia</a></b></li>
+  	</ul>
+	
+</nav>
+
+<article>
+
+<h1><center>England</center></h1>
+<h1 id = "bridge">London Bridge</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>London Bridge have spans the River Thames between the City of London and Southwark, incentral London. 
+		The current crossing, which opened to traffic in 1974, is a box girder bridge built from concrete and steel. 
+		This replaced a 19th-century stone-arched bridge, which in turn superseded a 600-year-old medieval structure. <br><br>
+
+		The Romans built the first version of what was to become London Bridge. 
+		Old London Bridge, as it is often referred to, was built upon 19 arches. 
+		It had a drawbridge at each end to allow tall ships to pass through it.
+		The bridge is featured in the traditional nursery rhyme London Bridge is Falling Down.
+		</p>
+		</td>
+
+	 	<td>
+		<img src="Images/beautiful-london-bridge-at-night.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+
+<h1 id = "stonehenge">Stonehenge</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Stonehenge is a prehistoric monument in Wiltshire, England.
+		Stonehenge's ring of standing stones are set within earthworks in the middle of the most dense complex of Neolithicand Bronze Age monuments in England, 
+		including several hundred burial mounds.Archaeologists believe it was constructed from 3000 BC to 2000 BC. <br><br>
+
+		The site and its surroundings were added to UNESCO's list of World Heritage Sites in 1986. 
+		Stonehenge could have been a burial ground from its earliest beginnings.
+		Stonehenge evolved in several construction phases spanning at least 1500 years. 
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/Stonehenge.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "londonEye">London Eye</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. 
+		It is also known as the Millennium Wheel. 
+		It is Europe's tallest Ferris wheel,and offered the highest public viewing point in London<br><br>
+
+		It is the most popular paid tourist attraction in the United Kingdom with over 3.75 million visitors annually,
+		and has made many appearances in popular culture.
+		The London Eye adjoins the western end of Jubilee Gardens , on the South Bank of the River Thames between Westminster Bridge and Hungerford Bridge.
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/London_Eye_Twilight_April_2006.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+
+<h1 id = "regents">Regents Park</h1>
+
+<table >
+	<tr>
+  		<td width = "700px">
+		<p>
+		Regent's Park is one of the Royal Parks of London. 
+		It lies within north-west London, partly in the City of Westminster and partly in the London Borough of Camden.
+		It contains Regent's University London and the London Zoo.<br><br>
+
+		Sports are played in the park including Tennis, Netball, Athletics, Cricket, Softball,Football, Hockey,Rugby, Ultimate Frisbee and Running. 
+		Belsize Park Rugby Football Club play their home games in the park.
+		There are three playgrounds and there is boating on the lake.
+		
+		</p>
+		</td>
+
+		 <td>
+		<img src="Images/the-regents-park-1.jpg" alt="HTML5 Icon" style="width:400px;height:270px;">
+  		</td>
+  	</tr>
+</table>
+<br>
+<br>
+<div id = "map_canvas" style="width:1100px; height:400px">
+</div>
+</article>
+<footer>Copyright © Dinithi Wickramaratne</footer>
+</div>
+
+</body>
+</html>
