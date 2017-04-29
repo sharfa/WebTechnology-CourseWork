@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+td {
+    border: 3px solid blue;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+border: 3px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #E9CFEC;
+}
+
+th:nth-child(even) {
+    background-color: #FDEEF4;
+}
+
+th:nth-child(odd) {
+    background-color: #E3E4FA;
+}
+
+body{
+background-image:url( "images/singapore.jpg");
+}
+
+gif{
+float:right;
+}
+
+</style>
+
+</head>
+
+<body>
+<table>
+<caption id = "qui"> Quiz Instructions</caption>
+  <tr>
+    <th>No. of Qusetions</th>
+    <th>Attempts Allowed</th>
+    <th>Pass Rate</th>
+    <th>Time Allocated</th>
+    <th>Marks Allocated </th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>1 Attempt would be given for each individual to enter  the raffel draw  of winning a free ticket </td>
+    <td>80%</td>
+     <td>45 Seconds</td>
+     <td> You will get 2 Marks For Each Correct Answer, And -1 For Each Wrong Asnwer,Final  mark would be out of 20 </td>
+  </tr>
+</table>
+<br><br><br><br><br>
+
+<form >
+<input type = "button" name = "submit" value = "Start Quiz" id = "submit"onclick="location.href='quizq1.html'" >
+</form>
+
+<div>
+<img src = "images/18er2o.gif" style="float:right" >
+</div>
+<br><br><br><br>
+
+<div id = "wrap">
+<marquee id="myMarquee"> Be a LUCKY WINNER to enter the raffel draw  </marquee>
+
+<button onclick="function1();">Left</button>
+<button onclick="function2();">Right</button>
+
+</div>
+
+
+<script>
+
+function function1(){
+        document.all.myMarquee.direction = "left";
+    }
+    function function2(){
+        document.all.myMarquee.direction = "right";
+    }
+
+</script>
+
+
+</body>
+</html>

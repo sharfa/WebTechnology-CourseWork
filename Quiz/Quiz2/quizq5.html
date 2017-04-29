@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+</head>
+
+<body background="images/london22.jpg"; >
+
+<script src="timer5.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+<form id = "quizq5" name = "quizq5" onsubmit = "return validate();" action = "quizq6.html" >
+<table>
+<caption id = "qui"> Tourism Quiz </caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  05 </center> </h3>
+
+<p > <center> <b> <strong> What is the busiest underground station in London </center></p></b> </strong> <br>  
+  <select id = "q5" name="usrgrp[]">
+		<option value="-1"selected="selected">select </option>
+		<option value="option1"> Waterloo </option>  
+		<option value="option2"> Lewisham </option>
+		<option value="option3"> Tower Hamlets </option> 
+                <option value="option4">Greenwich </option> 
+	</select><br> <br> </td>
+<td><td><img src = "images/WaterlooStation_fa25103.jpg" alt = "waterloo Image width="200" height="250" border = "3"  id="img1"/></td></td>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td></tr>
+</tr>
+</table>
+</form>
+
+<script type="text/JavaScript">  
+
+function validate() {
+
+if( document.quizq5.q5.value == "-1" )
+   {
+     alert( "Please select an answer to proceed to question No. 6" );
+     return false;
+   }
+}
+
+</script>
+</body>
+</html>
+
+
+

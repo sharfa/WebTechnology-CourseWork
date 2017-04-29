@@ -1,0 +1,98 @@
+#submit {
+    background-color: #F70D1A;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align:center;
+    
+}
+
+#submit{
+ border-radius: 15px;
+}
+#submit:hover {
+    background-color: green;
+    color: black;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#submit:active {
+transform: translateY(4px);
+}
+
+
+#btnclr {
+    background-color: purple;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align:center;
+    
+}
+
+#btnclr{
+ border-radius: 15px;
+}
+#btnclr:hover {
+    background-color: blue;
+    color: black;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#btnclr:active {
+transform: translateY(4px);
+}
+
+
+h1{
+font-family:Freestyle Script;
+text-align:center;
+font-size:150px;
+
+}
+
+
+
+
+#p1{
+width:570px;
+height:40px;
+background-color:lightblue;
+text - align:center;
+margin-left:100px;
+font-size:40px;
+font-family:Freestyle Script;
+}
+
+#r1{
+margin-left:150px;
+background-color:lightblue;
+margin-right:150px;
+height:250px;
+padding:20px;
+font-family:Lucida Handwriting;
+border:2px double purple;
+}
+
+#wrap{
+width:250px;
+height:100px;
+color: red;
+background-color:black;
+font-family:Freestyle Script;
+font-size:25px;
+margin-left:100px;
+}
+
+#score{
+color:white;
+background-color:black;
+}

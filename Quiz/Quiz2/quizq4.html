@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+</head>
+
+<body background="images/singapore-skyline-1.jpg";>
+
+<script src="timer4.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+<form id = "quizq4" name = "quizq4" onsubmit = "return validate();" action = "quizq5.html" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  04 </center> </h3>
+<p>What's the name of the world's largest basillica of Christianity which is situated in Italy</p><br> 
+
+     <select id = "q4" name="usrgrp[]">
+		<option value="-1"selected="selected">select</option>
+		<option value="1">St.Peters Basillica </option>  
+		<option value="2"> St.Mathews Basillica </option>
+		<option value="3"> St.Jhons Basillica </option> 
+                <option value="4">St.James Basillica </option> 
+    </select><br> <br> <br><br>
+
+<td><img src = "images/st-peters-basilica-andrzej-szczerski.jpg" alt = "St. Peters basilica Image width="250" height="300" border = "3"  align="center"/></td>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td></tr>
+</tr>
+</table>
+</form>
+
+<script type="text/JavaScript">  
+
+function validate(){ 
+
+if( document.quizq4.q4.value == "-1" )
+   {
+     alert( "Please select an answer to proceed to question No. 5" );
+     return false;
+   }
+}
+</script>
+</body>
+</html>
+

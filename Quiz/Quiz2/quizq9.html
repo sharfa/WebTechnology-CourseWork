@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+</head>
+
+<body background="images/Origin_635315021164977152.jpg">
+
+
+<script src="timer9.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+<form id = "quizq9" name = "quizq9" onsubmit = "return validate();" action = "quizq10.html" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  09 </center> </h3>
+
+<p> No of spices and the no of animals in the Night Safari in Singapore </p> <br><br>
+
+         <select id = "q9" name="usrgrp[]">
+		<option value="-1"selected="selected">select </option>
+		<option value="130 -  2500"> 130 -  2500 </option>  
+		<option value="170 -  2580"> 170 -  2585 </option>                                                                                                                                                                                                                                                                                                                                                                                                 
+		<option value="240 -  2500"> 240 -  2500 </option> 
+                <option value="186 -  2367">186 -  2367 </option> 
+	</select><br> <br> </td>
+
+<td><img src = "images/Night-Safari-Singapore-Mystica.jpg" alt = "Night-Safari-Singapore Image width="250" height="300" border = "3"  align="center"/></td>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td></tr>
+</tr>
+</table>
+</form>
+
+
+<script type="text/JavaScript">
+  
+function validate() 
+{
+if( document.quizq9.q9.value == "-1" )
+   {
+     alert( "Please select an answer to proceed to question No. 10" );
+     return false;
+   }
+}
+
+</script>
+
+</body>
+</html>

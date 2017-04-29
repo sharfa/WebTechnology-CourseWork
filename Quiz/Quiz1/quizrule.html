@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="StyleSheet" type="text/css" href="../../HomePage/StyleSheet2.css"/>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+td {
+    border: 3px solid blue;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+border: 3px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #E9CFEC;
+}
+
+th:nth-child(even) {
+    background-color: #FDEEF4;
+}
+
+th:nth-child(odd) {
+    background-color: #E3E4FA;
+}
+
+body{
+background-image:url( "images/singapore.jpg");
+}
+
+gif{
+float:right;
+}
+
+h1{
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+<ul id="ul1">
+  <li><a class="active" href="../../Homepage/HomePage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="../../AboutUs/TravelGirl.html" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="../../AboutUs/CVDinithi.html">Dinithi Wickramaratne</a>
+      <a href="../../AboutUs/CV-Shehani.html">Shehani Perera</a>
+      <a href="../../AboutUs/CVAfra.html">Afra Raheem</a>
+      <a href="../../AboutUs/CV-Sharfa.html">Sharfa Nasser</a>
+      <a href="../../AboutUs/CV-Thamashi.html">Thamashi Kumarasinghe</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations</a>
+    <div class="dropdown-content">
+      <a href="../../Destinations/France.html">France</a>
+      <a href="../../Destinations/England.html">England</a>
+      <a href="../../Destinations/Italy.html">Italy</a>
+      <a href="../../Destinations/Singapore.html">Singapore</a>
+      <a href="../../Destinations/Malaysia.html">Malaysia</a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Our store</a>
+    <div class="dropdown-content">
+      <a href="../../Store/products1.php">Souvenir</a>
+      <a href="../../Store/products2.php">Books</a>
+      <a href="../../Store/products3.php">Accessories</a>
+    </div>
+  </li>
+
+  <li><a class="active" href="../../ContactUs/ContactUsForm.html">Contact us</a></li>
+</ul>
+<h1> Tourism Quiz </h1>
+
+<div id = "r1">
+<p><ol><br><li>Click "Start Quiz " Button To Start The Game.</li><br>
+    <li>You Have 10 Questions To Answer And You Are Getting Only<b> 40 seconds </b>To Answer All The Questions.</li><br> 
+    <li>Each Question Has 03 Possible Answers and You Have To Give  Exactly One Answer.</li><br> 
+    <li>You will get 2 Marks For Each Correct Answer, And -1 For Each Wrong Asnwer.</li><br>
+    <li>Finally You Will Get Total Marks Out Of 20.</li><br></ol>
+</div>
+<br><br><br><br><br>
+
+<form >
+<input type = "button" name = "submit" value = "Start Quiz" id = "submit" style = "margin-left:500px"onclick="location.href='Quiz.html'" >
+</form>
+
+
+
+
+		      
+<br><br><br><br>
+
+<div id = "wrap">
+<marquee id="myMarquee"> Be a LUCKY WINNER   </marquee>
+
+<button onclick="function1();">Left</button>
+<button onclick="function2();">Right</button>
+
+</div>
+
+
+<script>
+
+function function1(){
+        document.all.myMarquee.direction = "left";
+    }
+    function function2(){
+        document.all.myMarquee.direction = "right";
+    }
+
+</script>
+
+
+</body>
+</html>

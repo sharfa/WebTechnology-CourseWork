@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+<script type = "text/javascript">
+
+function myfunc(){
+var temp = document.quizq6.q6.value;
+if(temp == ""){
+alert ("Please enter the answer to proceed to question No. 7 ");
+return false;
+}
+}
+
+</script>
+
+</head>
+
+<body background="images/london22.jpg">
+
+<script src="timer6.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+
+<form id = "quizq6" name = "quizq6" onsubmit = "return myfunc();" action = "quizq7.html" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<table>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  06 </center> </h3>
+
+<p>Who is the owner of the Universal Studios in Singapore</p> <br><br>
+  <input id = "q6" type = "text"  name="q6" /> <br> <br> </td>
+<td><img src = "images/uss9.jpg" alt = "Universal Studios" Image width="350" height="300" border = "3"  align="center"/></td>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
+

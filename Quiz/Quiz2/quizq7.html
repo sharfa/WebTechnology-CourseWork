@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+</head>
+
+<body background="images/singapore-skyline-1.jpg">
+
+<script src="timer7.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+
+<form id = "quizq7" name = "quizq7" onsubmit = "return validate();" action = "quizq8.html" >
+<table>
+<caption id = "qui"> Tourism Quiz </caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  07 </center> </h3>
+
+<p> <center> <strong><b> Height of the Eiffel Tower in France </b> </strong></p> <center>  
+             
+         <input type = "checkbox" id = "q7.1" name="options[]" value="Option 1"/> <span> 325 </span>  <br> 
+	 <input type = "checkbox" id = "q7.2" name="options[]" value="Option 2" /> <span> 330 </span>  <br>
+	 <input type = "checkbox" id = "q7.3" name="options[]" value="Option 3" /> <span> 379 </span>  <br>
+	 <input type = "checkbox" id = "q7.4" name="options[]" value="Option 4" /> <span> 324 </span>  <br> </td>
+
+<td><img src = "images/eiffel-tower-paris-france_main.jpg" alt = "Eiffel Tower Image width="150" height="250" border = "3"  align="center"/></td></tr>
+<tr>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td>
+</tr>
+
+</table>
+</form>
+
+<script>
+function validate(){
+
+var chks = document.getElementsByName('options[]');
+var hasChecked = false;
+for (var i = 0; i < chks.length; i++)
+{
+if (chks[i].checked)
+{
+hasChecked = true;
+break;
+}
+}
+if (hasChecked == false)
+{
+alert("Please select an answer to procees to question No. 8");
+return false;
+}
+return true;
+}
+
+</script>
+
+</body>
+</html>
+
+

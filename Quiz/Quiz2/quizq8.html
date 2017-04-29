@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head > 
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+<script type = "text/javascript">
+
+function myfunc(){
+var temp = document.quizq8.q8.value;
+if(temp == ""){
+alert ("Please enter the answer to proceed to question No. 9 ");
+return false;
+}
+}
+
+</script>
+
+</head>
+
+<body  background="images/A_Night_Perspective_on_the_Singapore_Merlion_(8347645113).jpg"; >
+
+<script src="timer8.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+
+<form id = "quizq8" name = "quizq8" onsubmit = "return myfunc();" action = "quizq9.html" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  08 </center> </h3>
+
+<strong> <b>Who created the Colosseum building which is located at the east of the Roman forum </strong> </b> <br> <br>
+
+                 <input id = "q8" type = "text" name = "q8" /> <br> </td>
+
+<td><img src = "images/Colosseum_2412363b.jpg" alt = "Colosseum Image width="250" height="300" border = "3"  align="center"/></td>
+
+<td><td><input type = "submit" name = "submit" value = "Submit" id = "submit" /></td></td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

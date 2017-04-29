@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head > 
+
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+<script>
+
+function myFunction(){
+isValid();
+}
+
+</script>
+
+
+<script>
+
+function isValid() {
+var r = document.getElementsByName("5")
+var c = -1
+
+for(var i=0; i < r.length; i++){
+   if(r[i].checked) {
+      c = i;
+       
+   }
+}
+
+if (c == -1) {
+alert("please select an answer to proceed to question No 2");
+return false;
+}
+
+if(c!=-1){
+setTimeout(function() {window.location = "quizq2.html" });
+}
+
+}
+</script>
+
+
+<style>
+
+body{
+background-attachment:fixed;
+}
+
+</style>
+</head>
+
+<body  background="images/A_Night_Perspective_on_the_Singapore_Merlion_(8347645113).jpg"; >
+<script src="timer1.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+
+<form id = "quizq1" onsubmit = "myFunction()" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  01 </center> </h3>
+
+
+ <p><b> <strong> What is the most important water way of Venice </b> </strong> </p>
+       
+            <input type = "radio" name="5" value = " 5.1 " > <span> The Grand Canal </span><br>
+	    <input type = "radio" name="5" value = " 5.2 "> <span> River Roding </span><br>
+            <input type = "radio" name="5" value = " 5.3 "> <span> Limehouse Cut </span> <br>
+	    <input type = "radio" name="5" value = " 5.4 "> <span> Welsh Harp </span> <br></td>
+
+<td><img src = "images/Grand-Canal.jpg" alt = "Grand-Canal Image width="200" height="250" border = "3"  align="center"/></td> </tr>
+<div id="msg"></div>
+
+<td><td><input type = "submit" value = "Submit"  id = "submit"></td></td></tr>
+
+</table>	       
+</form>
+
+</body>
+</html>
+
+
+
+

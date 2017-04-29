@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head > 
+
+<title>Tourism Quiz </title>
+<link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+
+<script>
+
+function myFunction(){
+isValid();
+}
+</script>
+
+<script>
+
+function isValid() {
+var r = document.getElementsByName("10")
+var c = -1
+
+for(var i=0; i < r.length; i++){
+   if(r[i].checked) {
+      c = i;
+       
+   }
+}
+
+if (c == -1) {
+alert("please select an answer to submit the quiz");
+return false;
+}
+
+if(c!=-1){
+setTimeout(function() {window.location = "quizend.html" });
+}
+
+}
+</script>
+
+</head>
+
+<body  background="images/london22.jpg"; >
+
+<script src="timer10.js">
+</script>
+
+<form name="cd">
+<h3 id="timeleft">Time Remaining for the Quiz</h3>
+<input id="txt" readonly="true" type="text" value="7:00" border="0" name="disp"  >
+</form>
+
+
+<form id = "quizq10" onsubmit = "myFunction()" >
+<table>
+<caption id = "qui">Tourism Quiz</caption>
+<tr>
+<td>
+ 
+<h3> <center> QUESTION  10 </center> </h3>
+
+<p>  In the list of  tallest freestanding towers in the world what is the position of the Kaula Lampur tower </p>
+              <input type = "radio" id = "10.1" name="10" value = " 10.1 " /> <span>  7th tallest  </span>  <br>
+	      <input type = "radio" id = "10.2" name="10" value = " 10.2 " /> <span>  5th tallest  </span> <br>
+              <input type = "radio" id = "10.3" name="10" value = " 10.3 " /> <span>  9th tallest </span>  <br>
+	      <input type = "radio" id = "10.3" name="10" value = " 10.4 " /> <span>  2th tallest  </span> <br></td>
+
+<td><img src = "images/Windows-Live-Writer-9-FebKL-Bird-Park_ECC4-14_thumb.jpg" alt = "kaula Lamput tower Image width="250" height="300" border = "3"  align="center"/></td>
+ 
+<div id="msg"></div>
+
+<td><td><input type = "submit" value = "Submit"  id = "submit"></td></td></tr>
+</table>	       
+</form>
+
